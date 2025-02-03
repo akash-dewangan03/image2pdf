@@ -21,12 +21,12 @@ This project allows users to upload multiple images in JPG or PNG format, adjust
 Follow the steps below to set up the project locally.
 
 1. Clone the repository
-    bash
+    ```bash
     git clone https://github.com/akash-dewangan03/image2pdf.git
     cd image-to-pdf-converter
 
 2. Install dependencies
-    bash
+    ```bash
     npm install
 
 3. Run the app
