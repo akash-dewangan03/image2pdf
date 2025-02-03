@@ -23,7 +23,7 @@ Follow the steps below to set up the project locally.
 1. Clone the repository
     ```bash
     git clone https://github.com/akash-dewangan03/image2pdf.git
-    cd image-to-pdf-converter
+    cd image2pdf
 
 2. Install dependencies
     ```bash
