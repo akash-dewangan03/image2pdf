@@ -1,0 +1,166 @@
+/* Container and Layout */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6ee7b7, #3b82f6);
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Flexbox for the form container */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+/* Styling for header */
+h1 {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text-green-500 {
+  color: #07110d;
+  font-weight: bold;
+}
+
+/* File upload styling */
+.file-upload-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.file-upload-label:hover {
+  background: #d1d5db;
+}
+
+.file-upload-label span {
+  margin-left: 10px;
+  font-size: 1rem;
+  color: #3b82f6;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+/* Button styles */
+button {
+  background-color: #3b82f6;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* View and download links */
+#pdfViewAndDl {
+  margin-top: 20px;
+}
+
+a {
+  background-color: #ffffff;
+  color: #3b82f6;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+  background-color: #3b82f6;
+  color: white;
+}
+
+/* Footer Styling */
+footer {
+  font-size: 0.875rem;
+  color: white;
+  margin-top: 30px;
+  border-top: 1px solid #d1d5db;
+  padding-top: 10px;
+}
+
+footer a {
+  color: #fbbf24;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Image Container and Layout */
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Create flexible grid layout */
+  gap: 10px; /* Spacing between images */
+  justify-items: center; /* Center images in their grid cells */
+  align-items: center; /* Center images vertically */
+  margin-top: 20px; /* Add space above images */
+}
+
+/* Individual image item styling */
+.image-item {
+  cursor: pointer;
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px; /* Fixed width */
+  height: 150px; /* Fixed height */
+  overflow: hidden; /* Hide overflow for images */
+  transition: transform 0.2s;
+}
+
+.image-item.dragging {
+  opacity: 0.5; /* Reduce opacity when dragging */
+  transform: scale(1.05); /* Slightly scale up the image */
+}
+
+/* Droppable area styling */
+.droppable-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px; /* Fixed size */
+  height: 150px; /* Fixed size */
+}
